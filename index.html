@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f5f7f4" />
+  <title>Servicios · Nido</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="Nido inicio"><span class="brand-mark">n</span><span>nido</span></a>
+      <div class="side-label">MENÚ</div>
+      <nav class="nav-list" aria-label="Navegación principal">
+        <a class="nav-item" href="#"><span class="nav-icon">⌂</span>Inicio</a>
+        <a class="nav-item" href="#"><span class="nav-icon">⇄</span>Transferencias</a>
+        <a class="nav-item" href="#"><span class="nav-icon">▤</span>Tarjetas</a>
+        <a class="nav-item active" href="#"><span class="nav-icon">◉</span>Pago de servicios<span class="nav-dot"></span></a>
+        <a class="nav-item" href="#"><span class="nav-icon">◷</span>Actividad</a>
+      </nav>
+      <div class="side-bottom">
+        <div class="help-card"><div class="help-icon">✦</div><strong>¿Necesitás ayuda?</strong><p>Estamos para acompañarte.</p><button class="text-button">Ir al centro de ayuda <span>↗</span></button></div>
+        <button class="profile"><span class="avatar">MC</span><span class="profile-copy"><strong>María C.</strong><small>Cuenta personal</small></span><span class="more">···</span></button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar"><div class="breadcrumbs">Inicio <span>/</span> <strong>Pago de servicios</strong></div><div class="top-actions"><span class="country"><span>🇦🇷</span> Argentina <span class="chevron">⌄</span></span><button class="icon-button" aria-label="Notificaciones">♧<i></i></button></div></header>
+      <section class="page-wrap">
+        <div class="page-heading"><div><div class="eyebrow"><span class="eyebrow-dot"></span> TU DÍA A DÍA, MÁS SIMPLE</div><h1>Pago de servicios</h1><p class="subtitle">Tus facturas en un solo lugar. Pagá cuando quieras.</p></div><button class="primary-button" id="addServiceTop"><span class="plus">＋</span> Vincular servicio</button></div>
+
+        <div class="balance-strip"><div class="strip-icon">↗</div><div><strong>Todo listo para pagar</strong><span>Vinculá tus servicios y encontrá tus facturas cada mes.</span></div><button class="strip-link" id="howButton">¿Cómo funciona? <span>→</span></button></div>
+
+        <div class="section-header"><div><h2>Tus servicios</h2><p>Facturas vinculadas a tu cuenta</p></div></div>
+        <div class="service-grid" id="serviceGrid"></div>
+        <div class="bottom-row"><div class="security-note"><span class="lock">♧</span><span><strong>Pagos seguros</strong><small>Tu información está protegida en todo momento.</small></span></div><button class="history-link" id="historyButton">Ver historial de pagos <span>→</span></button></div>
+        <footer>© 2026 Nido <span>·</span> Una forma más simple de estar al día</footer>
+      </section>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <div class="modal-backdrop" id="modalBackdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="close-modal" id="closeModal" aria-label="Cerrar">×</button><div id="modalContent"></div></section></div>
+  <script src="app.js"></script>
+</body>
+</html>
